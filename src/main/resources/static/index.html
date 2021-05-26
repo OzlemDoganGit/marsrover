@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta name="viewport"
+	content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+<title>MarsRover | Hepsiburada Coding Challenge</title>
+<link rel="stylesheet" href="/css/main.css" />
+<link rel="stylesheet"
+	href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+	integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+	crossorigin="anonymous">
+</head>
+<body>
+
+	<noscript>
+		<h2>Sorry! Your browser doesn't support Javascript</h2>
+	</noscript>
+
+
+	<div id="title">
+		<div class="title-container">
+			<h2 class="title">Mars Rover Navigation</h2>
+			<h3 class="title">Poles are N(orth), S(outh), E(ast), W(est)</h3>
+			<h3 class="title">Directions are L(eft), R(ight), M(ove)</h3>
+		</div>
+	</div>
+
+	<div id="game-page">
+		<div class="game-page-container">
+
+
+			<form id=plateau class="form-inline">
+				<div class="form-group mb-2">
+					<span class="input-group-text"
+						style="border-left: 0; border-right: 0; color: red; font: italic small-caps bold 12px/30px Georgia, serif;">Enter
+						dimensions of plateau </span>
+				</div>
+				<div class="form-group mx-sm-3 mb-2">
+					<input type="text" id="plateauDim" autocomplete="off"
+						class="form-control" placeholder="in the format of x-y" />
+				</div>
+				<div class="input-group-append">
+					<button class="btn btn-primary" type="submit">Submit</button>
+				</div>
+			</form>
+
+			<form id=roverPos class="form-inline" >
+				<div class="form-group mb-2">
+					<span class="input-group-text"
+						style="border-left: 0; border-right: 0; color: red; font: italic small-caps bold 12px/30px Georgia, serif;">Enter
+						coordinates and Pole of Rover </span>
+				</div>
+				<div class="form-group mx-sm-3 mb-2">
+					<input type="text" id="roverposition" autocomplete="off"
+						class="form-control" placeholder="in the format of x-y-P" />
+				</div>
+				<div class="input-group-append">
+					<button class="btn btn-primary"type="submit">Submit</button>
+				</div>
+			</form>
+
+			<form id=roverInst class= "form-inline">
+				<div class="form-group mb-2">
+					<span class="input-group-text"
+						style="border-left: 0; border-right: 0; color: red; font: italic small-caps bold 12px/30px Georgia, serif;">Enter
+						instructions of Rover</span>
+				</div>
+				<div class="form-group mx-sm-3 mb-2">
+					<input type="text" id="roverInstruction" autocomplete="off"
+						class="form-control" placeholder="in the format of LMRML" />
+				</div>
+				<div class="input-group-append">
+					<button class="btn btn-primary"type="submit">Submit</button>
+				</div>
+			</form>
+
+
+
+			<form id=roverResult class="form-inline">
+				<div class="form-group mb-2">
+					<span class="input-group-text"
+						style="border-left: 0; border-right: 0; color: red; font: italic small-caps bold 12px/30px Georgia, serif;">Rover Next Position </span>
+				</div>
+				<div class="form-group mx-sm-3 mb-2">
+					<input type="text" id="roverNextPos" autocomplete="off"
+						class="form-control" placeholder="in the format of x-y-P" readonly />
+				</div>
+				<div class="input-group-append">
+					<button class="btn btn-success"type="submit">OK</button>
+				</div>
+			</form>
+
+
+
+
+		</div>
+	</div>
+	<script src="https://code.jquery.com/jquery-3.3.1.js"
+		integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+		crossorigin="anonymous"></script>
+	<script
+		src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+		integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+		crossorigin="anonymous"></script>
+	<script src="/js/main.js"></script>
+</body>
+</html>

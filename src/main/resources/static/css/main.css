@@ -1,0 +1,161 @@
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+html, body {
+	height: 100%;
+	overflow: hidden;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	font-weight: 400;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 1rem;
+	line-height: 1.58;
+	color: #333;
+	background-color: rgb(255, 128, 255);
+	height: 100%;
+}
+
+body:before {
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: rgb(240, 240, 240);
+	content: "";
+	z-index: 0;
+}
+
+.clearfix:after {
+	display: block;
+	content: "";
+	clear: both;
+}
+
+.hidden {
+	display: none;
+}
+
+.form-control {
+	width: 100%;
+	min-height: 38px;
+	font-size: 15px;
+	border: 1px solid #c8c8c8;
+}
+
+.form-group {
+	margin-bottom: 15px;
+}
+
+input {
+	padding-left: 10px;
+	outline: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+h1 {
+	font-size: 1.7em;
+}
+
+h2 {
+	font-size: 2.0em;
+	font-weight: bold;
+	color: #000000;
+}
+
+a {
+	color: rgb(255, 255, 128);
+}
+
+button {
+	box-shadow: none;
+	border: 1px solid transparent;
+	font-size: 14px;
+	outline: none;
+	line-height: 100%;
+	white-space: nowrap;
+	vertical-align: middle;
+	padding: 0.6rem 1rem;
+	border-radius: 2px;
+	transition: all 0.2s ease-in-out;
+	cursor: pointer;
+	min-height: 38px;
+}
+
+button.default {
+	background-color: #e8e8e8;
+	color: #333;
+	box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.12);
+}
+
+button.primary {
+	background-color: #128ff2;
+	box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.12);
+	color: #fff;
+}
+
+
+#game-page {
+	text-align: center;
+}
+
+.game-page-container {
+	background: rgb(242, 242, 242);
+	box-shadow: 0 1px 11px rgba(0, 0, 0, 0.27);
+	border-radius: 2px;
+	width: 100%;
+	max-width: 800px;
+	display: inline-block;
+	margin-top: 42px;
+	vertical-align: middle;
+	position: relative;
+	padding: 35px 55px 35px;
+	min-height: 400px;
+	position: absolute;
+	top: 50%;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+	margin-top: -160px;
+	text-align: right;
+}
+
+#title {
+	text-align: center;
+}
+
+.title-container {
+	background: rgb(255, 235, 205);
+	box-shadow: 0 1px 22px rgba(0, 0, 0, 0.27);
+	border-radius: 2px;
+	width: 100%;
+	max-width: 860px;
+	display: inline-block;
+	margin-top: 60px;
+	vertical-align: middle;
+	position: relative;
+	padding: 25px 55px 35px;
+	min-height: 70px;
+	position: absolute;
+	top: 54%;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+	margin-top: -350px;
+	margin-left: 330px;
+}
+
+.game-page-container .game-submit {
+	margin-top: 10px;
+}
+
